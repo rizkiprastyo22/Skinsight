@@ -1,5 +1,16 @@
 # Skinsight
 
+1. home
+ng g c pages/home/components/banner/home-banner --flat --skip-tests
+ng g c pages/home/components/ingredients/home-ingredients --flat --skip-tests
+ng g c pages/home/components/products/home-products --flat --skip-tests
+
+2. ingredients
+ng g c pages/ingredients/components/banner/ingredients-banner --flat --skip-tests
+
+3. products
+ng g c pages/products/components/banner/products-banner --flat --skip-tests
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 
 ## Development server

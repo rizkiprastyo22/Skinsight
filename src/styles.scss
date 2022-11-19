@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+
+// color pallete
+$color-success: #117864;
+
+*{
+    font-family: 'Montserrat';
+}
+
+.bg-green {
+    background-color: $color-success;
+}
