@@ -1,1 +1,67 @@
-<p>home-ingredients works!</p>
+<section>
+  <div class="container mt-4">
+    <!-- tampilan desktop -->
+    <div class="d-none d-lg-block">
+
+        <!-- tulisan atas -->
+      <div class="row">
+        <div class="d-flex justify-content-start">
+          <div class="offset-1 offset-lg-0 col-6 col-lg-8">
+            <h3><strong>Kandungan</strong> yang biasa dicari</h3>
+          </div>
+          <div class="col-lg-4 col-5 pe-4 text-end">
+            <a href="#" class="text-success">Lihat Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <!-- item -->
+        <div class="col-lg-4 mb-3 d-flex align-items-stretch" *ngFor="let ingredient of ingredients">
+          <div class="card">
+            <img [src]="ingredient.img" class="card-img-top" alt="Card Image">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">{{ ingredient.name }}</h5>
+              <p class="card-text mb-4">{{ ingredient.desc }}</p>
+              <a href="#" class="btn btn-outline-success mt-auto align-self-start" style="width:100%">Pelajari Kandungan <i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <!-- tampilan mobile -->
+    <div class="d-block d-lg-none">
+      <div class="row">
+        <div class="offset-1 col-10">
+          <h3><strong>Kandungan</strong> yang biasa dicari</h3>
+
+          <div class="row">
+
+            <!-- item -->
+            <div class="col-md-4 mb-3 d-flex align-items-stretch" *ngFor="let ingredient of ingredients">
+              <div class="card">
+                <img [src]="ingredient.img" class="card-img-top" alt="Card Image">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">{{ ingredient.name }}</h5>
+                  <p class="card-text mb-4">{{ ingredient.desc }}</p>
+                  <a href="#" class="btn btn-outline-success mt-auto align-self-start" style="width:100%">Pelajari Kandungan <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-11 text-end mt-4">
+          <button class="btn btn-success">Lihat Selengkapnya</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
